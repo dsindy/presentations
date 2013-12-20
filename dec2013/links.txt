@@ -1,0 +1,43 @@
+ipython - http://ipython.org/
+ipython manual install - http://ipython.org/ipython-doc/stable/install/install.html
+
+diving into open data
+
+https://speakerdeck.com/pyconca/diving-into-open-data-with-ipython-notebook-and-pandas-julia-evans
+http://nbviewer.ipython.org/github/jvns/talks/blob/master/pyconca2013/pistes-cyclables.ipynb
+
+
+baysian methods for hackers 
+
+- http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/#prologue 
+- http://nbviewer.ipython.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter1_Introduction/Chapter1_Introduction.ipynb
+
+Pandas timeseries:
+
+- http://nbviewer.ipython.org/github/changhiskhan/talks/blob/master/pydata2012/pandas_timeseries.ipynb
+
+Trading:
+
+- http://nbviewer.ipython.org/gist/twiecki/3962843
+
+	
+Working with Open Data class:
+
+http://nbviewer.ipython.org/github/fperez/blog/blob/master/130507-Berkeley-iSchool-OpenData.ipynb
+
+iJulia preview:
+
+http://nbviewer.ipython.org/url/jdj.mit.edu/~stevenj/IJulia%20Preview.ipynb
+
+Plotly and iPython:
+
+http://nbviewer.ipython.org/gist/cparmer/7628933
+
+iPython book and code: 
+
+http://ipython.rossant.net/
+
+
+Computational genomics class:
+
+https://github.com/BenLangmead/comp-genomics-class/blob/master/README.md
