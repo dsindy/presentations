@@ -1,12 +1,19 @@
-Facebook-Recent results obtaining 95%+ accuracy on image classification (Google has similar results with speech recognition)
+# Presentation on Deeplearning by Andrew Hoblitzell
 
-Bengio-A survey paper from 2012
+See the `DL_Introduction.pptx` file for the presentation
 
-Hinton Science-A 2006 Paper by Hinton which helped kickstart the current round of interest in neural nets
+## Supporting material
 
-ImageNet-2012 Paper which caused people to take Hinton and the new method seriously
+- Facebook-Recent results obtaining 95%+ accuracy on image classification (Google has similar results with speech recognition)
+
+- Bengio-A survey paper from 2012
+
+- Hinton Science-A 2006 Paper by Hinton which helped kickstart the current round of interest in neural nets
+
+- ImageNet-2012 Paper which caused people to take Hinton and the new method seriously
 
 
+## Misc notes
 
 These were the examples I had wanted to cover but couldn’t without connectivity:
 
