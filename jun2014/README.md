@@ -45,7 +45,9 @@
 4. Does not question the credibility and generalizability of the results. Concerns solely with reporting existing data.
 5. Uses ONLY prepackaged, single-purpose package.
 
+----- 
 
+## FUTURE TOPICS
 
 **Who are going to be involved in your Data Science Project?**
 
