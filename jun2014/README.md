@@ -20,15 +20,15 @@
 
 **How to identify a problem that can be solved by a Data Science project?**
 
-- --Has a lot of diverse data.
-- --Problems that were left unsolved/solved unsatisfactorily for the lack of computing power/tools.
-- --Problem has to lead to a solution or a course of action/decision/product.
-- --Identifying data variables that have influence on decision making.
-- --Talk to people. Investigate/query the people "Ask the right questions to the right people".
-- --Start from the data and identify interesting questions from that. . "what questions can we answer, given this data".
-- --Convert qualitative values to quantitative values. (eg: whiskey reviews to star ratings"
-- --Tell a Compelling Story from data
-- --Validate the "truth" of existing BI/reporting systems.
+- Has a lot of diverse data.
+- Problems that were left unsolved/solved unsatisfactorily for the lack of computing power/tools.
+- Problem has to lead to a solution or a course of action/decision/product.
+- Identifying data variables that have influence on decision making.
+- Talk to people. Investigate/query the people "Ask the right questions to the right people".
+- Start from the data and identify interesting questions from that. . "what questions can we answer, given this data".
+- Convert qualitative values to quantitative values. (eg: whiskey reviews to star ratings"
+- Tell a Compelling Story from data
+- Validate the "truth" of existing BI/reporting systems.
 
 **A Data Science project may have one of more this:**
 
@@ -63,11 +63,11 @@
 
 Related topics to discuss in future meetups:
 
-- --Trends – why DS?
-- --Applications in various industries
-- --Using Python vs R? why not together?
-- --What is a good data scientist?
-- --What is the minimum level of competence required in:
+- Trends – why DS?
+- Applications in various industries
+- Using Python vs R? why not together?
+- What is a good data scientist?
+- What is the minimum level of competence required in:
   - Mathematics
   - Statistics
   - Programming
@@ -75,7 +75,7 @@ Related topics to discuss in future meetups:
   - Project management – setting expectations
   - Product lifecycle
 
-- --Resources
+- Resources
   - Classes
   - Datasets
   - Tools
