@@ -47,8 +47,6 @@
 
 ----- 
 
-## FUTURE TOPICS
-
 **What are the traits of the people involved your Data Science Project?**
 
 - your therapist
