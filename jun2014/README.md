@@ -49,17 +49,97 @@
 
 ## FUTURE TOPICS
 
-**Who are going to be involved in your Data Science Project?**
+**What are the traits of the people involved your Data Science Project?**
+
+- your therapist
+- Experts with domain knowledge
+ - Willingness to share (just enough)
+ - bottom-up experience in the field (+ve trait)
+ - ability to communicate
+ - identify value
+ - explaining the meaning of results (eg: spurious results) 
+ - ["T-shaped people"](http://assets.sbnation.com/assets/1074301/Valve_Handbook_LowRes.pdf) (from Valve employee handbook).
+  
+- Data Engineer - (pull data, data cleaning, ETL)
+- Project Sponsor
+ - Strong will
+ - political capital
+ - knows how to set expectations
+ - good prioritization ability
+ - upselling
+ - championing the cause/getting the buy-in
+
+- Data Artist 
+  - Visualization, 
+  - Narration (eg: Beautiful Evidence by Tufte), 
+  - Nate Silver
+  - Upshot 
+  - Mike Bostok (D3 creator)
+- Statistician/Machine Learning expert (Math+Stats background)
+ - Sanity -- reasonable generalizations, soundness of the models
+ - actual  models
+ - ability to indentify the useful of the data
+ - methods -- A/B testing etc.,  
+- Programmer traits
+  - GUI
+  - Gluing systems together - scripting ability
+  - Reporting
+  - Productionizing
+    - covering edge cases
+    - efficiency
+    - scalability
+    - documentation
+    - product life cycle/ maintainance
+    - testing
+    - version management
+- Data science product engineer(!)
 
 **What will you need to start a data science project?**
 
 **What does your toolkit look like?**
 
+Version Control systems:
+
+- git 
+- mercurial
+
+Delivery
+ - Data visualization toolkit
+ - Reporting tools
+
+Model discovery and generation
+- Exploratory data analysis
+
+ETL tools
+
+Data storage/management
+
+Glue programming
+
+Dev/System environment setup
+ - VMs
+ 
+Infrastructure
+- Cloud based services
+- High end hardware (GPU)
+- Network (pipeline)
+
+Programming languages
+- Libraries/toolkits
+
+Project Management tools
+- Trello
+- Jira
+
+Documentation 
+
+Testing and Continuous integration
 
 
 **What will you have to show at the end of your project?**
 
-
+- Delivery 
+ - dynamic documents -- R/Shiny, Javascript
 
 Related topics to discuss in future meetups:
 
@@ -80,4 +160,6 @@ Related topics to discuss in future meetups:
   - Datasets
   - Tools
   - Books
+    - Practical Data Science with R
+   
   - Competitions
