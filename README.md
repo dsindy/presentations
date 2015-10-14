@@ -9,3 +9,5 @@ Presentations
 * [Jun 2014](jun2014) My First Data Science Project by Pradeep Gowda
 * [Sep 2014](sep2014) Introduction to GPU optimization for Analytic Throughput in R by Matt Gilliam
 * [Oct 2014](oct2014) Preprocessing, Feature Selection, and Cross-Validation: Key Ingredients for a Winning Solution in Kaggle’s DecMeg2014 Competition by Nathan Hammes
+* [Feb 2015](feb2015) News by Andrew Hoblitzell
+* [Oct 2015](oct2015) News by Andrew Hoblitzell
