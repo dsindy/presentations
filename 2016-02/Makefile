@@ -1,5 +1,5 @@
 dsindy-2016-02-pwl.html: README.md reveal.js
-	pandoc -s -S -t revealjs $< -o $@
+	pandoc -s -S -t revealjs $< -o $@ --mathjax
 
 reveal.js:
 	wget -q https://github.com/hakimel/reveal.js/archive/3.2.0.tar.gz
