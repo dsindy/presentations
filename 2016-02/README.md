@@ -118,9 +118,11 @@ date: Feb 10, 2016
 
 Find a function $f(x)$ -- an algorithm that operates on $x$ to predict the responses to $y$.
 
-## The issue with Data modeling
+# The issue with Data modeling
 
-The statistician, by imagination and by looking at the data, can invent a reasonably good model to explain the complex mechanism of nature.
+The statistician, by imagination and by looking at the data, can
+invent a reasonably good model to explain the complex mechanism of
+nature.
 
 ----
 
