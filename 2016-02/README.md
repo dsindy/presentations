@@ -8,10 +8,12 @@ date: Feb 10, 2016
 
 ![](images/pwlorg.png)
 
+
+# [around the world](http://paperswelove.org/)
+
 - .. is a [repository](https://github.com/papers-we-love/papers-we-love)
 - .. is a community
 
-# [around the world](http://paperswelove.org/)
 
 ![](images/papers-we-love-ogp.png)
 
@@ -32,7 +34,7 @@ date: Feb 10, 2016
 - Machine learning
 - Computer science
 - Data Engineering
-- Visualization
+- Visualisation
 
 
 # Get the Upside
@@ -122,7 +124,7 @@ The statistician, by imagination and by looking at the data, can invent a reason
 
 ----
 
-- The conclsion about the model fit are about the model's mechanism, and not about nature's mechanism
+- The conclusion about the model fit are about the model's mechanism, and not about nature's mechanism
 - If the model is a poor emulation of nature, the conclusions may be wrong
 
 ----
@@ -141,12 +143,12 @@ a clear picture of nature's mechanism
 # Algorithmic modeling
 
 - Fitting equations to data
-- Predictive accurary is the goal
+- Predictive accuracy is the goal
 - Applied in: speech and image recognition, handwriting recognition, predicting financial markets etc.,
 
 ----
 
-Aproach: -- "nature produces data in a black box whose insides are complex, mysterious, and at least, partly unknowable".
+Approach: -- "nature produces data in a black box whose insides are complex, mysterious, and at least, partly unknowable".
 
 ----
 
@@ -188,7 +190,7 @@ ie.,
 
 ----
 
-# OCcam's dilemma
+# Occam's dilemma
 
 "Accuracy generally requires more complex prediction methods. Simple
 and interpretable functions do not make the most accurate predictors".
