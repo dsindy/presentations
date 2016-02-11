@@ -227,6 +227,11 @@ The goal is to get accurate information, and not interpretability.
 
 # Thank you
 
+Presentation is available here:
+
+- <https://www.btbytes.com/talks/2016-02/dsindy-2016-02-pwl.html>
+
+
 The source to the slides are available on github:
 
 - <https://github.com/dsindy/presentations/tree/master/2016-02>
