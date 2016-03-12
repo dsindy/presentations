@@ -1,0 +1,278 @@
+---
+title: "Additional Favorite Packages"
+author: "David Taylor"
+date: "March 12, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# LIBRARIES
+```{r}
+install.packages("plotly")
+
+install.packages("dplyr")
+
+install.packages("tidyr")
+
+install.packages("plyr")
+
+install.packages("XML")
+
+install.packages("data.table")
+
+install.packages("RSQLite")
+
+install.packages("RPostgreSQL")
+
+install.packages("nycflights13")
+
+install.packages("Lahman")
+
+install.packages("biglm")
+
+install.packages("Rtools")
+
+install.packages("curl")
+
+install.packages("plotly")
+
+install.packages("digest")
+
+install.packages("Rcpp")
+
+
+```
+
+# Plot.ly
+
+```{r}
+
+# Required packages from CRAN
+.pkgs = c("RJSONIO", "RCurl", "devtools")
+ 
+# Install required packages from CRAN (if not)
+.inst <- .pkgs %in% installed.packages()
+if(length(.pkgs[!.inst]) > 0) install.packages(.pkgs[!.inst])
+ 
+# Install plotly package from Github
+if(! "plotly" %in% installed.packages()) {
+  require(devtools)
+  devtools::install_github("plotly/R-api")
+}
+ 
+# Load package
+library(plotly)
+
+devtools::install_github("ropensci/plotly")
+
+p <- plot_ly(midwest, x = percollege, color = state, type = "box")
+
+p
+
+# OPTIONAL - REQUIRES PLOTLY ACCOUNT - you can set it up for free: [link](www.plot.ly)
+
+#Sys.setenv("plotly_username"="your_plotly_username")
+#Sys.setenv("plotly_api_key"="your_api_key")
+
+Sys.setenv("plotly_username"="divdev")
+Sys.setenv("plotly_api_key"="9z9ngexkiw")
+
+p <- plot_ly(midwest, x = percollege, color = state, type = "box")
+
+# POSTS IT TO THE SERVER (plot.ly)
+plotly_POST(p, filename = "r-docs/midwest-boxplots")
+
+
+```
+
+
+# dplyr - next generation plyr
+
+look here for more: [link](http://www.r-bloggers.com/hands-on-dplyr-tutorial-for-faster-data-manipulation-in-r/)
+
+```{r}
+library(dplyr) # for functions
+library(nycflights13) # for data
+flights
+
+flights_db1 <- tbl(nycflights13_sqlite(), "flights")
+
+
+carriers_df  <- flights %>% group_by(carrier)
+carriers_db1 <- flights_db1 %>% group_by(carrier)
+
+
+carriers_df %>% summarise(delay = mean(arr_delay))
+
+carriers_db1 %>% summarise(delay = mean(arr_delay)) %>% collect()
+
+
+plyr::ddply(flights, "carrier", plyr::summarise, delay = mean(arr_delay, na.rm = TRUE))
+
+
+by_year <- lahman_df() %>% 
+  tbl("Batting") %>%
+  group_by(yearID)
+
+by_year %>% 
+  do(mod = lm(R ~ AB, data = .))
+
+
+by_year %>% 
+  do(mod = lm(R ~ AB, data = .)) %>%
+  object.size() %>%
+  print(unit = "MB")
+
+
+by_year %>% 
+  do(mod = biglm::biglm(R ~ AB, data = .)) %>%
+  object.size() %>%
+  print(unit = "MB")
+
+
+
+```
+
+# plyr - original plyr package
+```{r}
+library(plyr)
+
+#make some example data
+dd<-data.frame(matrix(rnorm(216),72,3),c(rep("A",24),rep("B",24),rep("C",24)),c(rep("J",36),rep("K",36)))
+colnames(dd) <- c("v1", "v2", "v3", "dim1", "dim2")
+
+#ddply is the plyr function - data = dd, group by dim1 and dim2, calculate the mean of the v1 values)
+ddply(dd, c("dim1","dim2"), function(df)mean(df$v1))
+# output dim1, dim2, mean(v21)
+
+```
+
+
+# XML
+```{r}
+library(XML)
+
+
+# Save the URL of the xml file in a variable
+
+xml.url <- "http://www.w3schools.com/xml/plant_catalog.xml"
+
+# Use the xmlTreePares-function to parse xml file directly from the web
+ 
+xmlfile <- xmlTreeParse(xml.url)
+
+
+# the xml file is now saved as an object you can easily work with in R:
+
+class(xmlfile)
+
+
+
+# Use the xmlRoot-function to access the top node
+
+xmltop = xmlRoot(xmlfile)
+
+# have a look at the XML-code of the first subnodes:
+
+print(xmltop)[1:2]
+
+
+plantcat <- xmlSApply(xmltop, function(x) xmlSApply(x, xmlValue))
+
+
+# Finally, get the data in a data-frame and have a look at the first rows and columns
+
+plantcat_df <- data.frame(t(plantcat),row.names=NULL)
+plantcat_df[1:5,1:4]
+
+
+
+```
+
+
+# jsonlite
+```{r}
+library(jsonlite)
+
+#convert object to json
+myjson <- toJSON(iris, pretty=TRUE)
+cat(myjson)
+
+#convert json back to object
+iris2 <- fromJSON(myjson)
+print(iris2)
+
+```
+
+
+# tidyr
+```{r}
+library(dplyr)
+library(tidyr)
+
+messy <- data.frame(
+  name = c("Wilbur", "Petunia", "Gregory"),
+  a = c(67, 80, 64),
+  b = c(56, 90, 50)
+)
+messy
+
+# Remap a and b into a key/value pair of drug : heartrate
+messy %>%
+  gather(drug, heartrate, a:b)
+ 
+
+# Create another messy dataset
+
+set.seed(10)
+messy <- data.frame(
+  id = 1:4,
+  trt = sample(rep(c('control', 'treatment'), each = 2)),
+  work.T1 = runif(4),
+  home.T1 = runif(4),
+  work.T2 = runif(4),
+  home.T2 = runif(4)
+)
+
+messy
+
+# Gather the id and trt columns in to key and time
+tidier <- messy %>%
+  gather(key, time, -id, -trt)
+tidier %>% head(8)
+
+
+# split the key into location and time
+tidy <- tidier %>%
+  separate(key, into = c("location", "time"), sep = "\\.") 
+tidy %>% head(8)
+
+
+```
+
+
+# data.table [link](https://rawgit.com/wiki/Rdatatable/data.table/vignettes/datatable-intro-vignette.html)
+```{r}
+library(data.table)
+
+flights <- fread("https://raw.githubusercontent.com/wiki/arunsrinivasan/flights/NYCflights14/flights14.csv")
+flights
+
+class(flights$distance)
+
+gt_1000 <- flights[distance > 1000, .(mean(distance), min(distance), max(distance)), by=.(year)]
+
+head(gt_1000)
+
+```
+
+
+# caret (again)
+
+Look here for my January presentation on caret package :   [link](https://github.com/dsindy/presentations/tree/master/2016-01/R_Caret)
+
+
