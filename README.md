@@ -21,3 +21,4 @@ Presentations
 * [Jun 2016](2016-06) - Support Vector Machines (SVM) presentation, David Taylor
 * [Jul 2016](2016-07) - Introduction to TensorFlow, Andrew Hoblitzell
 * [Aug 2016](2016-08) - Workshop Preference Optimization, Alexandra Sullivan
+* [Sep 2016](2016-09) - Scala for Data Science, Pradeep Gowda
