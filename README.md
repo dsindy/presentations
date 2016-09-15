@@ -18,5 +18,6 @@ Presentations
 * [Mar 2016](2016-03) - Visualization (Part 2), David Taylor
 * [Apr 2016](2016-04) - Fishbowl
 * [May 2016](2016-05) - Introduction to Mathematical Optimization, Andrew Hoblitzell; Overview of new MOOCs, David Taylor
-* [June 2016](2016-06) - Support Vector Machines (SVM) presentation, David Taylor
-* [July 2016](2016-07) - Introduction to TensorFlow, Andrew Hoblitzell
+* [Jun 2016](2016-06) - Support Vector Machines (SVM) presentation, David Taylor
+* [Jul 2016](2016-07) - Introduction to TensorFlow, Andrew Hoblitzell
+* [Aug 2016](2016-08) - Workshop Preference Optimization, Alexandra Sullivan
